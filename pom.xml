@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>idv.liucheyu</groupId>
+    <artifactId>pomreader</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <moduleName>pomreader</moduleName>
+        <mainClass>idv.liucheyu.pomreader.Main</mainClass>
+    </properties>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.dom4j</groupId>-->
+<!--            <artifactId>dom4j</artifactId>-->
+<!--            <version>2.1.3</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.guicedee.services/dom4j -->
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.0.12.4</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-parameter-names</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.eclipse.jgit</groupId>
+            <artifactId>org.eclipse.jgit</artifactId>
+            <version>5.8.0.202006091008-r</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.moditect</groupId>-->
+<!--            <artifactId>moditect-maven-plugin</artifactId>-->
+<!--            <version>1.0.0.Beta2</version>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.4</version>
+                <configuration>
+                    <mainClass>idv.liucheyu.pomreader.Main</mainClass>
+                    <stripDebug>true</stripDebug>
+                    <compress>2</compress>
+                    <launcher>Main.sh</launcher>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <noManPages>true</noManPages>
+                    <jlinkImageName>pomreader</jlinkImageName>
+                    <jlinkZipName>pomreaderzip</jlinkZipName>
+                </configuration>
+
+            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.moditect</groupId>-->
+<!--                <artifactId>moditect-maven-plugin</artifactId>-->
+<!--                <version>1.0.0.Beta2</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>add-module-infos</id>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>add-module-info</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <jvmVersion>11</jvmVersion>-->
+<!--                            <module>-->
+<!--                                <moduleInfo>-->
+<!--                                    <name>idv.liucheyu.pomreader</name>-->
+<!--                                    <exports>-->
+<!--                                        idv.liucheyu.pomreader;-->
+<!--                                        idv.liucheyu.pomreader.controller;-->
+<!--                                    </exports>-->
+<!--                                    <open>-->
+<!--                                        idv.liucheyu.pomreader.controller;-->
+<!--                                    </open>-->
+<!--                                    <requires>-->
+<!--                                        javafx.graphics;-->
+<!--                                        javafx.controls;-->
+<!--                                        javafx.fxml;-->
+<!--                                        org.eclipse.jgit;-->
+<!--                                        com.fasterxml.jackson.databind;-->
+<!--                                        dom4j;-->
+<!--                                    </requires>-->
+
+<!--                                </moduleInfo>-->
+<!--                            </module>-->
+
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+        </plugins>
+    </build>
+
+
+</project>

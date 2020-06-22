@@ -1,0 +1,24 @@
+
+ScrollPane {
+    -fx-padding: 0px;
+    -fx-margin: 0px;
+}
+
+MenuBar {
+    -fx-background-color: #fffafa;
+    -fx-padding: 0px;
+    -fx-margin: 0px;
+}
+
+
+#sameVersionGrid {
+-fx-padding: 10 0 0 0;
+}
+
+#idvheader{
+
+}
+
+#sameVersionBox {
+-fx-padding: 10 10 10 50;
+}

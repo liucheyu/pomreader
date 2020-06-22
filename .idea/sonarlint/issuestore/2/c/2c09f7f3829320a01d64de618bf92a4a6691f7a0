@@ -1,0 +1,36 @@
+
+H
+java:S1481E"+Remove this unused "result" local variable.(ìş“8¸›øº­.
+c
+java:S1128"FRemove this unused import 'idv.liucheyu.pomreader.component.MainPage'.(‡èÒ˜8¸›øº­.
+F
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸›øº­.
+m
+java:S11923"KDefine a constant instead of duplicating this literal "dependency" 5 times.(“”¶±üÿÿÿÿ8¸›øº­.
+E
+java:S1148Y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸›øº­.
+x
+java:S11924"VDefine a constant instead of duplicating this literal "pathConfig.properties" 8 times.(‘ª‡íøÿÿÿÿ8¸›øº­.
+@
+java:S1148N"#Use a logger to log this exception.(Ç’Çê8¸›øº­.
+c	java:S8997"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8¸›øº­.
+E
+java:S1148@"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸›øº­.
+c
+java:S2147‚"ECombine this catch with the one at line 128, which has the same body.(ï­£Ä8¸›øº­.
+h
+java:S11922"KDefine a constant instead of duplicating this literal "baseFolder" 5 times.(€ê‰Ä8¸›øº­.
+F
+java:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸›øº­.
+@
+java:S11489"#Use a logger to log this exception.(Ç’Çê8¸›øº­.
+@
+java:S1148a"#Use a logger to log this exception.(Ç’Çê8¸›øº­.
+E
+java:S1148k"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸›øº­.
+@
+java:S1148q"#Use a logger to log this exception.(Ç’Çê8¸›øº­.
+h
+java:S1128"KRemove this unused import 'com.fasterxml.jackson.databind.node.ObjectNode'.(ëéï½8¸›øº­.
+v
+java:S1128	"TRemove this unnecessary import: same package classes are always implicitly imported.(¾…¤«ıÿÿÿÿ8¸›øº­.

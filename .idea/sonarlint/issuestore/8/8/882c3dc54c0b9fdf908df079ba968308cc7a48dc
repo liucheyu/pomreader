@@ -1,0 +1,73 @@
+
+E
+java:S1148?"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àû¼­.
+f
+java:S1192’"HDefine a constant instead of duplicating this literal "groupId" 4 times.(„ˆäŠ8àû¼­.
+_
+java:S2259…"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
+F
+java:S1148€"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8•ğÍ¹­.
+F
+java:S1148‚"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àû¼­.
+O
+java:S1612Î",Replace this lambda with a method reference.(¿ÍÎ¼şÿÿÿÿ8àû¼­.
+A
+java:S1148µ"#Use a logger to log this exception.(Ç’Çê8àû¼­.
+@
+java:S1148c"#Use a logger to log this exception.(Ç’Çê8¢˜ÉË­.
+_
+java:S2259±"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
+L
+java:S2093p"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8àû¼­.
+X
+java:S1854è":Remove this useless assignment to local variable "depMap".(…øüü8àû¼­.
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(•™ò‚ûÿÿÿÿ8àû¼­.
+M
+java:S1481t"+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8àû¼­.
+^	java:S125¢"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8àû¼­.
+f
+java:S20950"DUse try-with-resources or close this "Stream" in a "finally" clause.(Íß‹ùúÿÿÿÿ8àû¼­.
+F
+java:S1148á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢˜ÉË­.
+F
+java:S1148®"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àû¼­.
+_
+java:S2259†"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
+c
+java:S2147"ECombine this catch with the one at line 127, which has the same body.(ï­£Ä8àû¼­.
+^
+java:S1075!"ARefactor your code to get this URI from a customizable parameter.(ãÉ8àû¼­.
+‘
+java:S1130¼"tRemove the declaration of thrown exception 'org.dom4j.DocumentException', as it cannot be thrown from method's body.(‚Ïí8¢˜ÉË­.
+_
+java:S2259²"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
+N
+java:S1481 "+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8àû¼­.
+M
+java:S2093Ÿ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8àû¼­.
+]	java:S125v"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8àû¼­.
+E
+java:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àû¼­.
+A
+java:S1148ø"#Use a logger to log this exception.(Ç’Çê8¢˜ÉË­.
+U
+java:S3655’"7Call "Optional#isPresent()" before accessing the value.(„ˆäŠ8¢˜ÉË­.
+g
+java:S2259‡"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8àû¼­.
+c
+java:S2147­"ECombine this catch with the one at line 171, which has the same body.(ï­£Ä8àû¼­.
+g
+java:S2259³"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8àû¼­.
+m
+java:S1192"JDefine a constant instead of duplicating this literal "\\pom.xml" 4 times.(ÕéÅÊıÿÿÿÿ8•ğÍ¹­.
+E
+java:S1148T"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àû¼­.
+A
+java:S1148‰"#Use a logger to log this exception.(Ç’Çê8àû¼­.
+k
+java:S1192“"HDefine a constant instead of duplicating this literal "version" 4 times.(™‡ç…ÿÿÿÿÿ8àû¼­.
+F
+java:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8•ğÍ¹­.
+[
+java:S4719I"9Replace charset name argument with StandardCharsets.UTF_8(……®Øÿÿÿÿÿ8àû¼­.

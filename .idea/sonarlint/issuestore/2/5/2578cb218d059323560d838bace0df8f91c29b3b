@@ -1,0 +1,11 @@
+
+t
+java:S3776U"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(©ÕÌñÿÿÿÿÿ8§´íº­.
+X	java:S125C"<This block of commented-out lines of code should be removed.(Ööœ©8§´íº­.
+X	java:S1258"<This block of commented-out lines of code should be removed.(ðÙÏ‹8§´íº­.
+z	java:S116""YRename this field "MenuItemImport" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ·Ü’øÿÿÿÿ8§´íº­.
+R
+java:S1068-"0Remove this unused "idvComponent" private field.(žŸÖáýÿÿÿÿ8§´íº­.
+O
+java:S1068."2Remove this unused "pomVersionText" private field.(°åàÉ8§´íº­.
+]	java:S125>"<This block of commented-out lines of code should be removed.(ãéžáþÿÿÿÿ8§´íº­.

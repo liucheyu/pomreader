@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="idv.liucheyu.pomreader.controller.MainController">
+
+    <StackPane fx:id="mainPane"
+               AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <VBox>
+                <MenuBar fx:id="menuBar1" prefWidth="1000" maxWidth="Infinity">
+                    <Menu text="檔案">
+                        <!--            <MenuItem text="匯入" fx:id="MenuItemImport" onAction="#importOnClickAction" />-->
+                        <MenuItem text="設定專案父層目錄" fx:id="setBaseFolder" onAction="#setBaseFolder"/>
+                        <MenuItem text="設定專案依賴groupId" fx:id="setDepGroupId" onAction="#setDepGroupId"/>
+                    </Menu>
+                    <Menu text="操作">
+                        <MenuItem text="重新載入" fx:id="refresh" onAction="#refreshMainPage"/>
+                        <MenuItem text="清除畫面" fx:id="clearMain" onAction="#clearMain"/>
+                    </Menu>
+
+                </MenuBar>
+
+                <TabPane maxWidth="Infinity" prefWidth="1000">
+                    <Tab text="單獨修改" closable="false">
+                        <VBox>
+                            <GridPane id="idvheader" alignment="center" hgap="5" vgap="5">
+                                <children>
+                                    <Text GridPane.columnIndex="0" GridPane.rowIndex="0">專案名稱</Text>
+                                    <Text GridPane.columnIndex="1" GridPane.rowIndex="0">Release Note版本</Text>
+                                    <Text GridPane.columnIndex="2" GridPane.rowIndex="0">POM版本</Text>
+                                    <Text GridPane.columnIndex="3" GridPane.rowIndex="0">修改</Text>
+                                    <Text GridPane.columnIndex="4" GridPane.rowIndex="0">確定</Text>
+                                    <Text GridPane.columnIndex="5" GridPane.rowIndex="0">POM Git 操作</Text>
+                                </children>
+                                <columnConstraints>
+                                    <ColumnConstraints percentWidth="20"/>
+                                    <ColumnConstraints percentWidth="15"/>
+                                    <ColumnConstraints percentWidth="15"/>
+                                    <ColumnConstraints percentWidth="20" halignment="CENTER"/>
+                                    <ColumnConstraints percentWidth="10" halignment="LEFT"/>
+                                    <ColumnConstraints percentWidth="20" halignment="LEFT"/>
+                                </columnConstraints>
+                                <padding>
+                                    <Insets top="10" right="10" bottom="10" left="10"/>
+                                </padding>
+                            </GridPane>
+                            <ScrollPane hbarPolicy="NEVER" fitToHeight="true" fitToWidth="true">
+                                <GridPane fx:id="singleModifyGrid" alignment="TOP_CENTER" hgap="5" vgap="5">
+                                    <columnConstraints>
+                                        <ColumnConstraints percentWidth="20"/>
+                                        <ColumnConstraints percentWidth="15"/>
+                                        <ColumnConstraints percentWidth="15"/>
+                                        <ColumnConstraints percentWidth="20"/>
+                                        <ColumnConstraints percentWidth="10" halignment="LEFT"/>
+                                        <ColumnConstraints percentWidth="20" halignment="CENTER"/>
+                                    </columnConstraints>
+                                    <padding>
+                                        <Insets top="10" right="10" bottom="10" left="10"/>
+                                    </padding>
+                                </GridPane>
+                            </ScrollPane>
+                        </VBox>
+                    </Tab>
+                    <!--        <Tab text="指定多個專案進一版" closable="false">-->
+
+                    <!--        </Tab>-->
+                    <Tab text="所有專案版本改一樣" closable="false">
+                        <HBox id="sameVersionBox" spacing="10">
+                            <Text>version:</Text>
+                            <TextField fx:id="sameVersionTField" maxWidth="200"
+                                       GridPane.columnIndex="2" GridPane.rowIndex="0"></TextField>
+                            <Button fx:id="sameVersionButton" onAction="#samePomVersionEvent">修改全部POM</Button>
+                            <Button fx:id="discardAllPom" onAction="#samePomVersionEvent">discard all pom</Button>
+                        </HBox>
+                    </Tab>
+                </TabPane>
+            </VBox>
+        </children>
+    </StackPane>
+
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
+
+</AnchorPane>
