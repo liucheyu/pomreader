@@ -16,6 +16,13 @@
         <mainClass>idv.liucheyu.pomreader.Main</mainClass>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jgit-repository</id>
+            <url>https://repo.eclipse.org/content/groups/releases/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 <!--        <dependency>-->
 <!--            <groupId>org.dom4j</groupId>-->
@@ -29,7 +36,6 @@
             <version>1.0.12.4</version>
         </dependency>
 
-
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-parameter-names</artifactId>
@@ -40,13 +46,38 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.11.0</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.googlecode.javaewah</groupId>-->
+<!--            <artifactId>JavaEWAH</artifactId>-->
+<!--        </dependency>-->
 
+        <!-- Core Library -->
+<!--            <dependency>-->
+<!--                <groupId>org.eclipse.jgit</groupId>-->
+<!--                <artifactId>org.eclipse.jgit</artifactId>-->
+<!--                <version>5.8.0.202006091008-r</version>-->
+<!--            </dependency>-->
 
-        <dependency>
-            <groupId>org.eclipse.jgit</groupId>
-            <artifactId>org.eclipse.jgit</artifactId>
-            <version>5.8.0.202006091008-r</version>
-        </dependency>
+<!--        &lt;!&ndash; Smart HTTP Servlet &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.eclipse.jgit</groupId>-->
+<!--                <artifactId>org.eclipse.jgit.http.server</artifactId>-->
+<!--                <version>5.8.0.202006091008-r</version>-->
+<!--            </dependency>-->
+
+<!--        &lt;!&ndash; AWT UI Helpers &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.eclipse.jgit</groupId>-->
+<!--                <artifactId>org.eclipse.jgit.ui</artifactId>-->
+<!--                <version>5.8.0.202006091008-r</version>-->
+<!--            </dependency>-->
+
+<!--        &lt;!&ndash; JUnit Test Support &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.eclipse.jgit</groupId>-->
+<!--                <artifactId>org.eclipse.jgit.junit</artifactId>-->
+<!--                <version>5.8.0.202006091008-r</version>-->
+<!--            </dependency>-->
 
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -64,11 +95,6 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.moditect</groupId>-->
-<!--            <artifactId>moditect-maven-plugin</artifactId>-->
-<!--            <version>1.0.0.Beta2</version>-->
-<!--        </dependency>-->
 
     </dependencies>
 
@@ -97,49 +123,19 @@
                     <jlinkImageName>pomreader</jlinkImageName>
                     <jlinkZipName>pomreaderzip</jlinkZipName>
                 </configuration>
-
             </plugin>
 <!--            <plugin>-->
-<!--                <groupId>org.moditect</groupId>-->
-<!--                <artifactId>moditect-maven-plugin</artifactId>-->
-<!--                <version>1.0.0.Beta2</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>add-module-infos</id>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>add-module-info</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <jvmVersion>11</jvmVersion>-->
-<!--                            <module>-->
-<!--                                <moduleInfo>-->
-<!--                                    <name>idv.liucheyu.pomreader</name>-->
-<!--                                    <exports>-->
-<!--                                        idv.liucheyu.pomreader;-->
-<!--                                        idv.liucheyu.pomreader.controller;-->
-<!--                                    </exports>-->
-<!--                                    <open>-->
-<!--                                        idv.liucheyu.pomreader.controller;-->
-<!--                                    </open>-->
-<!--                                    <requires>-->
-<!--                                        javafx.graphics;-->
-<!--                                        javafx.controls;-->
-<!--                                        javafx.fxml;-->
-<!--                                        org.eclipse.jgit;-->
-<!--                                        com.fasterxml.jackson.databind;-->
-<!--                                        dom4j;-->
-<!--                                    </requires>-->
-
-<!--                                </moduleInfo>-->
-<!--                            </module>-->
-
-<!--                        </configuration>-->
-<!--                    </execution>-->
-<!--                </executions>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jar-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <archive>-->
+<!--                        <manifestEntries>-->
+<!--                            <Automatic-Module-Name>org.eclipse.jgit</Automatic-Module-Name>-->
+<!--                        </manifestEntries>-->
+<!--                    </archive>-->
+<!--                </configuration>-->
 <!--            </plugin>-->
         </plugins>
     </build>
-
 
 </project>

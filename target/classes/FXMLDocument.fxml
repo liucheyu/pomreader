@@ -18,6 +18,8 @@
                         <!--            <MenuItem text="匯入" fx:id="MenuItemImport" onAction="#importOnClickAction" />-->
                         <MenuItem text="設定專案父層目錄" fx:id="setBaseFolder" onAction="#setBaseFolder"/>
                         <MenuItem text="設定專案依賴groupId" fx:id="setDepGroupId" onAction="#setDepGroupId"/>
+                        <MenuItem text="設定Maven的bin目錄" fx:id="setMavenDir" onAction="#setMaenDir"/>
+                        <MenuItem text="設定Maven的setting.xml" fx:id="setMavenSetting" onAction="#setMaenSetting"/>
                     </Menu>
                     <Menu text="操作">
                         <MenuItem text="重新載入" fx:id="refresh" onAction="#refreshMainPage"/>
@@ -33,17 +35,19 @@
                                 <children>
                                     <Text GridPane.columnIndex="0" GridPane.rowIndex="0">專案名稱</Text>
                                     <Text GridPane.columnIndex="1" GridPane.rowIndex="0">Release Note版本</Text>
-                                    <Text GridPane.columnIndex="2" GridPane.rowIndex="0">POM版本</Text>
-                                    <Text GridPane.columnIndex="3" GridPane.rowIndex="0">修改</Text>
-                                    <Text GridPane.columnIndex="4" GridPane.rowIndex="0">確定</Text>
-                                    <Text GridPane.columnIndex="5" GridPane.rowIndex="0">POM Git 操作</Text>
+                                    <Text GridPane.columnIndex="2" GridPane.rowIndex="0">編輯</Text>
+                                    <Text GridPane.columnIndex="3" GridPane.rowIndex="0">POM版本</Text>
+                                    <Text GridPane.columnIndex="4" GridPane.rowIndex="0">修改</Text>
+                                    <Text GridPane.columnIndex="5" GridPane.rowIndex="0">確定</Text>
+                                    <Text GridPane.columnIndex="6" GridPane.rowIndex="0">Git 操作</Text>
                                 </children>
                                 <columnConstraints>
                                     <ColumnConstraints percentWidth="20"/>
-                                    <ColumnConstraints percentWidth="15"/>
-                                    <ColumnConstraints percentWidth="15"/>
+                                    <ColumnConstraints percentWidth="10" halignment="CENTER"/>
+                                    <ColumnConstraints percentWidth="5" halignment="CENTER"/>
+                                    <ColumnConstraints percentWidth="15" halignment="CENTER"/>
                                     <ColumnConstraints percentWidth="20" halignment="CENTER"/>
-                                    <ColumnConstraints percentWidth="10" halignment="LEFT"/>
+                                    <ColumnConstraints percentWidth="10" halignment="CENTER"/>
                                     <ColumnConstraints percentWidth="20" halignment="LEFT"/>
                                 </columnConstraints>
                                 <padding>
@@ -54,11 +58,12 @@
                                 <GridPane fx:id="singleModifyGrid" alignment="TOP_CENTER" hgap="5" vgap="5">
                                     <columnConstraints>
                                         <ColumnConstraints percentWidth="20"/>
-                                        <ColumnConstraints percentWidth="15"/>
-                                        <ColumnConstraints percentWidth="15"/>
-                                        <ColumnConstraints percentWidth="20"/>
-                                        <ColumnConstraints percentWidth="10" halignment="LEFT"/>
+                                        <ColumnConstraints percentWidth="10" halignment="CENTER"/>
+                                        <ColumnConstraints percentWidth="5" halignment="CENTER"/>
+                                        <ColumnConstraints percentWidth="15" halignment="CENTER"/>
                                         <ColumnConstraints percentWidth="20" halignment="CENTER"/>
+                                        <ColumnConstraints percentWidth="10" halignment="CENTER"/>
+                                        <ColumnConstraints percentWidth="20" halignment="LEFT"/>
                                     </columnConstraints>
                                     <padding>
                                         <Insets top="10" right="10" bottom="10" left="10"/>
@@ -73,10 +78,23 @@
                     <Tab text="所有專案版本改一樣" closable="false">
                         <HBox id="sameVersionBox" spacing="10">
                             <Text>version:</Text>
-                            <TextField fx:id="sameVersionTField" maxWidth="200"
-                                       GridPane.columnIndex="2" GridPane.rowIndex="0"></TextField>
+                            <TextField fx:id="sameVersionTField" maxWidth="200"></TextField>
                             <Button fx:id="sameVersionButton" onAction="#samePomVersionEvent">修改全部POM</Button>
                             <Button fx:id="discardAllPom" onAction="#samePomVersionEvent">discard all pom</Button>
+                        </HBox>
+                    </Tab>
+                    <Tab text="maven指令">
+                        <HBox spacing="10" alignment="TOP_CENTER">
+                            <VBox spacing="10" fx:id="mavenPage" disable="true">
+                                <VBox spacing="10" fx:id="choiceParent">
+                                    <Button fx:id="choiceAdd" onAction="#choiceAddAction">點擊增加多個操作專案(建議按照底層=>上層的順序)</Button>
+                                </VBox>
+                                <HBox spacing="10">
+                                    <Button fx:id="cleanInstall" onAction="#cleanInstall">clean install</Button>
+                                    <Button fx:id="cleanDeploy" onAction="#cleanDeploy">clean deploy</Button>
+                                </HBox>
+                            </VBox>
+
                         </HBox>
                     </Tab>
                 </TabPane>

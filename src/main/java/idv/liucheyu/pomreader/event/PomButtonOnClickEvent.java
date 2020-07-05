@@ -23,24 +23,25 @@ public class PomButtonOnClickEvent implements EventHandler<ActionEvent> {
     private ConfigService configService = new ConfigService();
     private Path projectPath;
     private GridPane pane;
+    private String depGroupid;
 
-    public PomButtonOnClickEvent(Path projectPath, GridPane pane) {
+    public PomButtonOnClickEvent(Path projectPath, GridPane pane, String depGroupid) {
         this.projectPath = projectPath;
         this.pane = pane;
+        this.depGroupid = depGroupid;
     }
 
     @Override
     public void handle(ActionEvent actionEvent) {
         Button btn = (Button) actionEvent.getSource();
+        Repository repository = gitService.getRepository(projectPath.toString());
 
         if (btn.getId().equals("discardPom")) {
-            Repository repository = gitService.getRepository(projectPath.toString());
             gitService.discard(repository, "pom.xml");
 
             Document document = fileService.getDocument(projectPath.toString() + "\\pom.xml");
             String pomVersion = fileService.getElemet(document.getRootElement(), "version").getText();
 
-            String depGroupid = configService.getConfigFolderByFile().get("dependency");
             String depVersion = fileService.getDependencyNameAndVersion(projectPath, depGroupid).get("version");
 
             Iterator<Node> iterator = pane.getChildren().iterator();
@@ -60,8 +61,16 @@ public class PomButtonOnClickEvent implements EventHandler<ActionEvent> {
 
         }
         if (btn.getId().equals("commitPom")) {
-            Repository repository = gitService.getRepository(projectPath.toString());
             gitService.commit(repository, "pom.xml");
         }
+
+        if(btn.getId().equals("commitPj")){
+            gitService.commitAll(repository);
+        }
+
+        if(btn.getId().equals("gitStausBtn")){
+            gitService.status(projectPath.toString());
+        }
+
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="idv.liucheyu.pomreader.controller.EditTextController"
+            prefHeight="650.0" prefWidth="800.0">
+    <VBox spacing="10">
+        <TextArea prefHeight="600" prefWidth="800" fx:id="editArea"></TextArea>
+        <HBox alignment="CENTER"><Button fx:id="editBtn" onAction="#confirmAction">儲存</Button></HBox>
+    </VBox>
+
+</AnchorPane>

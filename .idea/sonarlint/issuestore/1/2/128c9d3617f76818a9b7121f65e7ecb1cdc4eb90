@@ -1,0 +1,13 @@
+
+e
+java:S2259X"HA "NullPointerException" could be thrown; "repository" is nullable here.(ëí’÷8›¾¶æ­.
+E
+java:S1148V"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8›¾¶æ­.
+@
+java:S1148H"#Use a logger to log this exception.(Ç’Çê8éØÅê°.
+@
+java:S11487"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.
+@
+java:S1148%"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.
+@
+java:S1148"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.

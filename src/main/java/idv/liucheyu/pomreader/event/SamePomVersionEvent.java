@@ -1,17 +1,17 @@
 package idv.liucheyu.pomreader.event;
 
+import idv.liucheyu.pomreader.model.PomModel;
 import idv.liucheyu.pomreader.service.FileService;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
-import java.nio.file.Path;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 public class SamePomVersionEvent {
 
@@ -22,13 +22,12 @@ public class SamePomVersionEvent {
         this.actionEvent = actionEvent;
     }
 
-    public void onAction(GridPane pane, String version, List<Path> projectPaths, Map<String, String> pomVersionMap, String depGroupid) {
-        projectPaths.forEach(projPath -> {
-            String projectName = projPath.getFileName().toString();
-            if (pomVersionMap.get(projectName) != null && !pomVersionMap.get(projectName).equals("")) {
+    public void onAction(GridPane pane, String version, List<PomModel> pomModels) {
+        pomModels.forEach(pomModel -> {
+            String projectName = pomModel.getProjectName();
 
-                fileService.writeAndSavePom(projPath.toString() + "\\pom.xml", "version", version);
-                Document document = fileService.getDocument(projPath.toString() + "\\pom.xml");
+                fileService.writeAndSavePom(pomModel.getProjectPath() + "\\pom.xml", "version", version);
+                Document document = fileService.getDocument(pomModel.getProjectPath() + "\\pom.xml");
                 Element versionElement = fileService.getElemet(document.getRootElement(), "version");
                 Iterator<Node> iterator = pane.getChildren().iterator();
                 while (iterator.hasNext()) {
@@ -38,12 +37,9 @@ public class SamePomVersionEvent {
                             ((Text) node).setText(versionElement.getText());
                         }
                         if (node.getId() != null && node.getId().equals(projectName + "-depVersionText")) {
-                            fileService.writeAndSavePomDepVersion(projPath, ((Text) node), version, depGroupid);
+                            fileService.writeAndSavePomDepVersion(pomModel.getProjectPath(), ((Label) node), version, pomModel.getDependency().getGroupId());
                         }
                     }
-
-                }
-
 
             }
         });

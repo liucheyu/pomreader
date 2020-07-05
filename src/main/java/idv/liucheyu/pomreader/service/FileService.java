@@ -1,7 +1,9 @@
 package idv.liucheyu.pomreader.service;
 
+import idv.liucheyu.pomreader.model.Dependency;
+import idv.liucheyu.pomreader.model.PomModel;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextInputDialog;
-import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import org.dom4j.Document;
@@ -20,10 +22,21 @@ import java.util.stream.Stream;
 
 public class FileService {
 
-    public FileChooser initFileChooser(String titleName) {
+    public FileChooser initFileChooser(String titleName, String path) {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File("C:\\"));
+        fileChooser.setInitialDirectory(new File(path));
         fileChooser.setTitle(titleName);
+        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Text Files", "*.md", "*.txt");
+        fileChooser.getExtensionFilters().add(filter);
+        return fileChooser;
+    }
+
+    public FileChooser initFileChooser(String titleName, String path, String... extensions) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File(path));
+        fileChooser.setTitle(titleName);
+        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Files", extensions);
+        fileChooser.getExtensionFilters().add(filter);
         return fileChooser;
     }
 
@@ -33,6 +46,11 @@ public class FileService {
         directoryChooser.setInitialDirectory(new File("C:\\"));
         return directoryChooser;
     }
+
+//    public String getTextInputDialog(String contentText) {
+//
+//        return result;
+//    }
 
     public String getAbsolutePath(File file) {
         String path = "";
@@ -92,7 +110,7 @@ public class FileService {
         File file = new File(path);
         Document document = null;
         if (file.exists()) {
-            try (FileInputStream fis = new FileInputStream(path)) {
+            try (FileInputStream fis = new FileInputStream(file)) {
                 SAXReader saxReader = new SAXReader();
                 document = saxReader.read(fis);
             } catch (IOException | DocumentException ex) {
@@ -140,7 +158,7 @@ public class FileService {
         }
     }
 
-    public void writeAndSavePomDepVersion(Path projectPath, Text text, String version, String depGroupid) {
+    public void writeAndSavePomDepVersion(Path projectPath, Label text, String version, String depGroupid) {
         Document document = getDocument(projectPath.toString() + "\\pom.xml");
         Element depselement = getElemet(document.getRootElement(), "dependencies");
         Element projEle = depselement.elements().stream().filter(ele -> ele.elementText("groupId").equals(depGroupid)).findFirst().get();
@@ -214,18 +232,31 @@ public class FileService {
     }
 
 
-    public Map<String, String> getPomVersion(List<Path> projectPath) {
-        Map<String, String> versionMap = new HashMap<>(projectPath.size());
+    public List<PomModel> getPomVersion(List<Path> projectPath, String depGroupId) {
+        List<PomModel> pomList = new ArrayList<>();
         projectPath.forEach(pjp -> {
             //讀取每個檔案的xml檔
-            try {
-                String version = getPomXmlVersion(pjp.toString(), "\\pom.xml", "version");
-                versionMap.put(pjp.getFileName().toString(), version);
-            } catch (DocumentException e) {
-                e.printStackTrace();
+            PomModel pomModel = new PomModel();
+            pomModel.setProjectName(pjp.getFileName().toString());
+            pomModel.setProjectPath(pjp);
+            Document document = getDocument(pjp.toString() + "/pom.xml");
+            Element rootElement = document.getRootElement();
+            pomModel.setVersion(rootElement.elementText("version"));
+            pomModel.setGroupId(rootElement.elementText("groupId"));
+            pomModel.setArtifactId(rootElement.elementText("artifactId"));
+            Optional<Element> opp = rootElement.element("dependencies").elements("dependency").stream().filter(dep ->
+                    dep.elementText("groupId").equals(depGroupId)
+            ).findFirst();
+            if (opp.isPresent()) {
+                Dependency dependency = new Dependency();
+                dependency.setArtifactId(opp.get().elementText("artifactId"));
+                dependency.setGroupId(opp.get().elementText("groupId"));
+                dependency.setVersion(opp.get().elementText("version"));
+                pomModel.setDependency(dependency);
             }
+            pomList.add(pomModel);
         });
-        return versionMap;
+        return pomList;
     }
 
     public Map<String, String> getDependencyNameAndVersion(Path projectNamePath, String depGroupid) {
@@ -250,12 +281,12 @@ public class FileService {
         return depMap;
     }
 
-    public Optional<String> getMessageDialog(){
+    public Optional<String> getMessageDialog() {
         TextInputDialog textInputDialog = new TextInputDialog();
         textInputDialog.setTitle("message");
         textInputDialog.setHeaderText("請輸入message, 預設為none message");
         textInputDialog.setContentText("message:");
-        return  textInputDialog.showAndWait();
+        return textInputDialog.showAndWait();
     }
 
 

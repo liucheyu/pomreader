@@ -1,0 +1,25 @@
+
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(²úÔ8ûÓŞô®.
+c
+java:S2142&"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8©‘Ûô®.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8©‘Ûô®.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(²úÔ8©‘Ûô®.
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(õâÆ¸8ûÓŞô®.
+E
+java:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©‘Ûô®.
+E
+java:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ûÓŞô®.
+a
+java:S2147&"DCombine this catch with the one at line 36, which has the same body.(ä ¹€8©‘Ûô®.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(õâÆ¸8©‘Ûô®.
+a
+java:S2147H"DCombine this catch with the one at line 70, which has the same body.(ä ¹€8ûÓŞô®.
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8ûÓŞô®.
+o	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šâÔâüÿÿÿÿ8©‘Ûô®.
+E
+java:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ûÓŞô®.
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÖÒ·ûÿÿÿÿ8¡ÁĞ®.
+c
+java:S2142H"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ûÓŞô®.
+E
+java:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©‘Ûô®.

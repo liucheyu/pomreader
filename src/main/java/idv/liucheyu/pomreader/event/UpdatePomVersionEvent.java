@@ -4,8 +4,8 @@ import idv.liucheyu.pomreader.service.FileService;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
@@ -14,7 +14,7 @@ import java.nio.file.Path;
 public class UpdatePomVersionEvent implements EventHandler<ActionEvent> {
     private FileService fileService = new FileService();
 
-    private Text text;
+    private Label text;
     private TextField textField;
     private Path projectPath;
     private String depGoupid;
@@ -26,24 +26,24 @@ public class UpdatePomVersionEvent implements EventHandler<ActionEvent> {
     private UpdatePomVersionEvent() {
     }
 
-    private UpdatePomVersionEvent(Text text, Path projectPath, TextField textField) {
+    private UpdatePomVersionEvent(Label text, Path projectPath, TextField textField) {
         this.text = text;
         this.textField = textField;
         this.projectPath = projectPath;
     }
 
-    private UpdatePomVersionEvent(Text text, Path projectPath, String dependentName, TextField textField) {
+    private UpdatePomVersionEvent(Label text, Path projectPath, String dependentName, TextField textField) {
         this.text = text;
         this.textField = textField;
         this.projectPath = projectPath;
         this.depGoupid = dependentName;
     }
 
-    public UpdatePomVersionEvent updateIdvPomVersion(Text text, Path projectPath, TextField textField) {
+    public UpdatePomVersionEvent updateIdvPomVersion(Label text, Path projectPath, TextField textField) {
         return new UpdatePomVersionEvent(text, projectPath, textField);
     }
 
-    public UpdatePomVersionEvent updateDepPomVersion(Text text, Path projectPath, String dependentName, TextField textField) {
+    public UpdatePomVersionEvent updateDepPomVersion(Label text, Path projectPath, String dependentName, TextField textField) {
         return new UpdatePomVersionEvent(text, projectPath, dependentName,  textField);
     }
 

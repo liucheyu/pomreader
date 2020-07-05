@@ -8,5 +8,7 @@ module idv.liucheyu.pomreader {
 
     exports idv.liucheyu.pomreader;
     exports idv.liucheyu.pomreader.controller;
+    exports idv.liucheyu.pomreader.service;
     opens idv.liucheyu.pomreader.controller;
+    opens idv.liucheyu.pomreader.service;
 }

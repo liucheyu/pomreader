@@ -2,17 +2,15 @@ package idv.liucheyu.pomreader.service;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.RepositoryBuilder;
 import org.eclipse.jgit.storage.file.FileBasedConfig;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
+import java.io.InputStreamReader;
 import java.util.Optional;
-import java.util.Set;
 
 public class GitService {
 
@@ -60,6 +58,23 @@ public class GitService {
         }
     }
 
+    public void commitAll(Repository repository) {
+        Git git = new Git(repository);
+
+        try {
+            String message = "";
+            Optional<String> messageOp = fileService.getMessageDialog();
+            if (messageOp.isPresent()) {
+                message = messageOp.get().equals("") ? "none message" : messageOp.get();
+                git.add().addFilepattern(".").call();
+                git.commit().setMessage(message).call();
+            }
+
+        } catch (GitAPIException ex) {
+            ex.printStackTrace();
+        }
+    }
+
     public boolean exist(File repoDir) {
         Repository repository = null;
         try {
@@ -75,4 +90,37 @@ public class GitService {
         return repository.getDirectory().exists();
     }
 
+    public void status(String projectPath) {
+
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        processBuilder.command("git", "status");
+        File file = new File(projectPath);
+        if(file.exists()){
+            processBuilder.directory(file);
+            try {
+
+                Process process = processBuilder.start();
+                BufferedReader reader =
+                        new BufferedReader(new InputStreamReader(process.getInputStream(), "BIG5"));
+                BufferedReader reader2 =
+                        new BufferedReader(new InputStreamReader(process.getErrorStream(), "BIG5"));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+
+                int exitCode = process.waitFor();
+                System.out.println("\nExited with error code : " + exitCode);
+                String line2;
+                while ((line2 = reader2.readLine()) != null) {
+                    System.out.println(line2);
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
