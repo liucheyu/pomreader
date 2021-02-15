@@ -29,15 +29,18 @@ public class PageSetting {
 //        }
 //        configService.setBaseDependency(configModel.getDependencyGroupId());
 
-        if(!configModel.getBaseFolder().equals("") && !configModel.getDependencyGroupId().equals("")){
-            List<Path> projectPath  = fileService.getPomPath(Paths.get(configModel.getBaseFolder()));
+        if (!configModel.getBaseFolder().equals("") && !configModel.getDependencyGroupId().equals("")) {
+            List<Path> projectPath = fileService.getPomPath(Paths.get(configModel.getBaseFolder()));
 
-            //讀取releaseNote的版號,並加為Map(projectName, version)
-            Map<String, String> originVersionMap = fileService.getLastReleaseVersion(projectPath);
-            //讀取pom並收集成Map(projectName, version)
-            List<PomModel> pomModels = fileService.getPomVersion(projectPath, configModel.getDependencyGroupId());
-
-            renderMain(mainController, projectPath, originVersionMap, pomModels);
+            if(!projectPath.isEmpty()) {
+                //讀取releaseNote的版號,並加為Map(projectName, version)
+                Map<String, String> originVersionMap = fileService.getLastReleaseVersion(projectPath);
+                //讀取pom並收集成Map(projectName, version)
+                List<PomModel> pomModels = fileService.getPomVersion(projectPath, configModel.getDependencyGroupId());
+                if (!pomModels.isEmpty()) {
+                    renderMain(mainController, projectPath, originVersionMap, pomModels);
+                }
+            }
 
         }
 

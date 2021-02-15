@@ -1,64 +1,66 @@
 
-A
-java:S1148Å"#Use a logger to log this exception.(Ç’Çê8¤Æ­ñ¯.
-d	java:S899‘"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
-F
-java:S1148¸"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8â¡¥°.
-I
-java:S1481 "+Remove this unused "result" local variable.(ìş“8Æ‚Ğ¡°.
-F
-java:S1148Á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-n
-java:S1192‘"KDefine a constant instead of duplicating this literal "baseFolder" 5 times.(ºÇ˜ãüÿÿÿÿ8Æ‚Ğ¡°.
-A
-java:S1148Ô"#Use a logger to log this exception.(Ç’Çê8‚éê˜±.
-A
-java:S1148ñ"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-F
-java:S1148Ğ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-A
-java:S1148À"#Use a logger to log this exception.(Ç’Çê8â¡¥°.
-k
-java:S1192”"MDefine a constant instead of duplicating this literal "mavenSetting" 5 times.(Ù“³Ù8Æ‚Ğ¡°.
-F
-java:S1148é"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-d	java:S899ú"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
-A
-java:S1148‰"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-E
-java:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¤Æ­ñ¯.
-A
-java:S1148“"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-A
-java:S1148¤"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-c	java:S899{"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8¤Æ­ñ¯.
-d	java:S899Ş"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
-F
-java:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-d	java:S899­"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8â¡¥°.
-h
-java:S3027/"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(´ıİşÿÿÿÿ8Š±˜ñ¯.
-c
-java:S2147Ñ"ECombine this catch with the one at line 335, which has the same body.(ï­£Ä8Æ‚Ğ¡°.
-S
-java:S1141¾"5Extract this nested try block into a separate method.(ıÌã×8Æ‚Ğ¡°.
-F
-java:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-i
-java:S1192’"KDefine a constant instead of duplicating this literal "dependency" 5 times.(‘è¤8Æ‚Ğ¡°.
-F
-java:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
-A
-java:S1148à"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-s
-java:S1192w"VDefine a constant instead of duplicating this literal "pathConfig.properties" 8 times.(€É¨·8¤Æ­ñ¯.
-A
-java:S1148ü"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
-A
-java:S1148¯"#Use a logger to log this exception.(Ç’Çê8â¡¥°.
-@
-java:S1148}"#Use a logger to log this exception.(Ç’Çê8¤Æ­ñ¯.
+d	java:S899ù"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
 g
-java:S1192“"IDefine a constant instead of duplicating this literal "mavenDir" 5 times.(¥£§8Æ‚Ğ¡°.
+java:S1192’"IDefine a constant instead of duplicating this literal "mavenDir" 5 times.(¥£§8Æ‚Ğ¡°.
+c	java:S899z"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Å¦”œ².
+n
+java:S1192"KDefine a constant instead of duplicating this literal "baseFolder" 5 times.(ºÇ˜ãüÿÿÿÿ8Æ‚Ğ¡°.
+i
+java:S1192‘"KDefine a constant instead of duplicating this literal "dependency" 5 times.(‘è¤8Æ‚Ğ¡°.
+k
+java:S1192“"MDefine a constant instead of duplicating this literal "mavenSetting" 5 times.(Ù“³Ù8Æ‚Ğ¡°.
 F
-java:S1148Ò"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+java:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+A
+java:S1148’"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+F
+java:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8â¡¥°.
+A
+java:S1148¿"#Use a logger to log this exception.(Ç’Çê8â¡¥°.
+F
+java:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+A
+java:S1148®"#Use a logger to log this exception.(Ç’Çê8â¡¥°.
+@
+java:S1148|"#Use a logger to log this exception.(Ç’Çê8¤Æ­ñ¯.
+A
+java:S1148Ó"#Use a logger to log this exception.(Ç’Çê8‚éê˜±.
+s
+java:S1192v"VDefine a constant instead of duplicating this literal "pathConfig.properties" 8 times.(€É¨·8¤Æ­ñ¯.
+F
+java:S1148Ï"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+F
+java:S1148Ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+E
+java:S1148H"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¤Æ­ñ¯.
+A
+java:S1148ğ"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+F
+java:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+A
+java:S1148û"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+I
+java:S1481Ÿ"+Remove this unused "result" local variable.(ìş“8Æ‚Ğ¡°.
+A
+java:S1148ß"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+B
+java:S1075"&Remove this hard-coded path-delimiter.(ÂşúW8¯Çœ².
+c
+java:S2147Ğ"ECombine this catch with the one at line 334, which has the same body.(ï­£Ä8Æ‚Ğ¡°.
+F
+java:S1148‚"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+d	java:S899"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
+S
+java:S1141½"5Extract this nested try block into a separate method.(ıÌã×8Æ‚Ğ¡°.
+A
+java:S1148ˆ"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+A
+java:S1148Ä"#Use a logger to log this exception.(Ç’Çê8¤Æ­ñ¯.
+A
+java:S1148£"#Use a logger to log this exception.(Ç’Çê8Æ‚Ğ¡°.
+F
+java:S1148–"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Æ‚Ğ¡°.
+h
+java:S3027."FPut single-quotes around '.' to use the faster "indexOf(char)" method.(´ıİşÿÿÿÿ8Š±˜ñ¯.
+d	java:S899İ"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Æ‚Ğ¡°.
+d	java:S899¬"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8â¡¥°.

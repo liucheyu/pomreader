@@ -1,3 +1,5 @@
 
+x
+java:S1905"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@294e339a".(„‹Ïëüÿÿÿÿ8û‹Â“².
 Q
-java:S1068"/Remove this unused "actionEvent" private field.(ó¡¬Îýÿÿÿÿ8‚¿ñã­.
+java:S1068"/Remove this unused "actionEvent" private field.(ó¡¬Îýÿÿÿÿ8‚¿ñã­.

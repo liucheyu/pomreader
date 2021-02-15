@@ -7,62 +7,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62f1dc5-8450-4c90-8d03-b98cdb2ab7b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/controller/EditTextController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/model/ConfigModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/model/Dependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/model/PomModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/MavenCmdService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EditText.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/exception/MavenExcuteErrorException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/128c9d3617f76818a9b7121f65e7ecb1cdc4eb90" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/128c9d3617f76818a9b7121f65e7ecb1cdc4eb90" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c941b1e2e1b47a05523508b476cc88933d49507" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c941b1e2e1b47a05523508b476cc88933d49507" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/2578cb218d059323560d838bace0df8f91c29b3b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/2578cb218d059323560d838bace0df8f91c29b3b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c09f7f3829320a01d64de618bf92a4a6691f7a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c09f7f3829320a01d64de618bf92a4a6691f7a0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c0e08eee9311398946bc2633fb3389c8e528468" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c0e08eee9311398946bc2633fb3389c8e528468" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521e61e1b5c552ad6ab5f94ab01c13054d40ea2a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521e61e1b5c552ad6ab5f94ab01c13054d40ea2a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b782d3a5c80f66c4289e132a2dd1f55a66e207e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b782d3a5c80f66c4289e132a2dd1f55a66e207e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/882c3dc54c0b9fdf908df079ba968308cc7a48dc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/882c3dc54c0b9fdf908df079ba968308cc7a48dc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe4de0d74a43f1c39bad15674c56b5441d351ab" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe4de0d74a43f1c39bad15674c56b5441d351ab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b46e0c1e2c89873f8c6dde73689fde635c725f28" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b46e0c1e2c89873f8c6dde73689fde635c725f28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3db937f8cf9d236de64d8e3305d58942f2544f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3db937f8cf9d236de64d8e3305d58942f2544f6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/IndividualPomVersionComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/IndividualPomVersionComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/PageSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/PageSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/component/PageSetting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/MenuOnClickEvent.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/PomButtonOnClickEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/PomButtonOnClickEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/SamePomVersionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/SamePomVersionEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/UpdatePomVersionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/event/UpdatePomVersionEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/ConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/ConfigService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/GitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/GitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dom4j-2.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/org.eclipse.jgit-5.8.0.202006091008-r.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/MavenCmdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/idv/liucheyu/pomreader/service/MavenCmdService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLDocument.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXMLDocument.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/BaseComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/MainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/MenuOnClickEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/PomButtonOnClickEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/SamePomVersionEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/UpdatePomVersionEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/IndividualPomVersionComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/PageSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/component/PageSetting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/controller/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/controller/MainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/PomButtonOnClickEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/PomButtonOnClickEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/SamePomVersionEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/event/SamePomVersionEvent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/pathConfig.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/ConfigService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/GitService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/InitService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/MenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/ConfigService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/ConfigService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/GitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/GitService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/MavenCmdService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/idv/liucheyu/pomreader/service/MavenCmdService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +90,8 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -168,10 +159,10 @@
     </state>
     <state x="449" y="211" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1592709774095" />
     <state x="674" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592548339805" />
-    <state x="669" y="87" key="#com.intellij.ide.util.MemberChooser" timestamp="1593502068192">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1594655178839">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1593159720861" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1594655178839" />
     <state x="669" y="87" key="#com.intellij.ide.util.MemberChooser/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593502068192" />
     <state x="555" y="190" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592560812575">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -186,61 +177,65 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="146" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1592833482064" />
-    <state width="448" height="305" key="DebuggerActiveHint" timestamp="1593796825702">
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1594729398265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="448" height="305" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1593796825702" />
-    <state width="479" height="466" key="DebuggerActiveHint/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593501637439" />
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1594729398265" />
+    <state width="448" height="305" key="DebuggerActiveHint" timestamp="1594220532700">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="448" height="305" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1594220532700" />
+    <state width="479" height="466" key="DebuggerActiveHint/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1594184350881" />
     <state x="304" y="92" key="DetectedRootsChooserDialog" timestamp="1592754741223">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="304" y="92" key="DetectedRootsChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1592754741223" />
     <state x="456" y="140" key="DetectedRootsChooserDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592542947082" />
-    <state x="493" y="163" key="FileChooserDialogImpl" timestamp="1593854402622">
+    <state x="418" y="91" key="FileChooserDialogImpl" timestamp="1599573000522">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593854402622" />
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593650495014" />
-    <state width="1237" height="181" key="GridCell.Tab.0.bottom" timestamp="1593955805671">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="418" y="91" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599573000522" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1599541162470" />
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593955805671" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.0.center" timestamp="1593955805670">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593955805670" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.0.left" timestamp="1593955805670">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593955805670" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.0.right" timestamp="1593955805671">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.0.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593955805671" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.1.bottom" timestamp="1593955805546">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.0.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.1.bottom" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593955805546" />
-    <state width="1877" height="272" key="GridCell.Tab.1.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.1.center" timestamp="1593955805545">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.1.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.1.center" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1593955805545" />
-    <state width="1877" height="272" key="GridCell.Tab.1.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.1.left" timestamp="1593955805545">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.1.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.1.left" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1593955805545" />
-    <state width="1877" height="272" key="GridCell.Tab.1.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
-    <state width="1237" height="181" key="GridCell.Tab.1.right" timestamp="1593955805545">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1237" height="401" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.1.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
+    <state width="1877" height="319" key="GridCell.Tab.1.right" timestamp="1600682869144">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1593955805545" />
-    <state width="1877" height="272" key="GridCell.Tab.1.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593599042985" />
+    <state width="1237" height="401" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1598448423887" />
+    <state width="1877" height="319" key="GridCell.Tab.1.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1600682869144" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1592927282034">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -249,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="355" y="123" key="NewModule_or_Project.wizard/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592796849824" />
-    <state x="39" y="0" key="SettingsEditor" timestamp="1593860249123">
+    <state x="39" y="0" key="SettingsEditor" timestamp="1594449469618">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="39" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1593860249123" />
+    <state x="39" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1594449469618" />
     <state x="182" y="0" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592799828654" />
     <state x="470" y="199" key="classpath-attribute-editor" timestamp="1592493585592">
       <screen x="0" y="0" width="1280" height="680" />
@@ -262,24 +257,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1592742643215" />
-    <state x="326" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1593829164573">
+    <state x="326" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1599572989478">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="326" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1593829164573" />
-    <state x="489" y="252" key="com.intellij.ide.util.TipDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593650487377" />
+    <state x="326" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1599572989478" />
+    <state x="54" y="258" key="com.intellij.ide.util.TipDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1599525439259" />
     <state x="439" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593859879228">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="439" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593859879228" />
-    <state x="642" y="253" width="770" height="534" key="find.popup" timestamp="1592807151229">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="642" y="253" width="770" height="534" key="find.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592807151229" />
-    <state x="43" y="0" key="new project wizard" timestamp="1593857626881">
+    <state x="428" y="146" width="634" height="534" key="find.popup" timestamp="1594133765544">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="43" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1593857626881" />
-    <state x="65" y="64" key="new project wizard/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592797848456" />
+    <state x="428" y="146" width="634" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1594133765544" />
+    <state x="642" y="253" width="770" height="534" key="find.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1594028758858" />
+    <state x="65" y="64" key="new project wizard" timestamp="1599541196270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="43" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1594449778771" />
+    <state x="65" y="64" key="new project wizard/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1599541196270" />
     <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1593147165034">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -299,6 +295,10 @@
         <watch expression="rootElement.element(&quot;dependencies&quot;).elements(&quot;dependency&quot;)" />
         <watch expression="node" />
         <watch expression="s" />
+        <watch expression="selectString" />
+        <watch expression="projectPath" />
+        <watch expression="projectPath" />
+        <watch expression="projectPath" />
       </configuration>
     </watches-manager>
   </component>

@@ -2,10 +2,17 @@ package idv.liucheyu.pomreader.service;
 
 import idv.liucheyu.pomreader.model.Dependency;
 import idv.liucheyu.pomreader.model.PomModel;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -240,21 +247,29 @@ public class FileService {
             pomModel.setProjectName(pjp.getFileName().toString());
             pomModel.setProjectPath(pjp);
             Document document = getDocument(pjp.toString() + "/pom.xml");
-            Element rootElement = document.getRootElement();
-            pomModel.setVersion(rootElement.elementText("version"));
-            pomModel.setGroupId(rootElement.elementText("groupId"));
-            pomModel.setArtifactId(rootElement.elementText("artifactId"));
-            Optional<Element> opp = rootElement.element("dependencies").elements("dependency").stream().filter(dep ->
-                    dep.elementText("groupId").equals(depGroupId)
-            ).findFirst();
-            if (opp.isPresent()) {
-                Dependency dependency = new Dependency();
-                dependency.setArtifactId(opp.get().elementText("artifactId"));
-                dependency.setGroupId(opp.get().elementText("groupId"));
-                dependency.setVersion(opp.get().elementText("version"));
-                pomModel.setDependency(dependency);
+            if (document != null) {
+                Element rootElement = document.getRootElement();
+                pomModel.setVersion(rootElement.elementText("version") == null ? "" : rootElement.elementText("version"));
+                pomModel.setGroupId(rootElement.elementText("groupId") == null ? "" : rootElement.elementText("groupId"));
+                pomModel.setArtifactId(rootElement.elementText("artifactId") == null ? "" : rootElement.elementText("artifactId"));
+                if (rootElement.element("dependencies") != null) {
+                    Element depsEl = rootElement.element("dependencies");
+                    List<Element> deplist = depsEl.elements("dependency");
+                    if (!deplist.isEmpty()) {
+                        Optional<Element> opp = deplist.stream().filter(dep ->
+                                dep.elementText("groupId").equals(depGroupId)
+                        ).findFirst();
+                        if (opp.isPresent()) {
+                            Dependency dependency = new Dependency();
+                            dependency.setArtifactId(opp.get().elementText("artifactId") == null ? "" : opp.get().elementText("artifactId"));
+                            dependency.setGroupId(opp.get().elementText("groupId") == null ? "" : opp.get().elementText("groupId"));
+                            dependency.setVersion(opp.get().elementText("version") == null ? "" : opp.get().elementText("version"));
+                            pomModel.setDependency(dependency);
+                        }
+                    }
+                }
+                pomList.add(pomModel);
             }
-            pomList.add(pomModel);
         });
         return pomList;
     }
@@ -289,5 +304,69 @@ public class FileService {
         return textInputDialog.showAndWait();
     }
 
+    public Stage getGitAddOption(List<String> fileNames, List<String> selectString) {
+        Stage stage = new Stage();
+        VBox vBox = new VBox();
+        vBox.setSpacing(10);
+        vBox.setAlignment(Pos.TOP_LEFT);
+        vBox.setPadding(new Insets(10, 10, 10, 10));
+        fileNames.forEach(fn -> {
+            CheckBox checkBox = new CheckBox(fn);
+            vBox.getChildren().add(checkBox);
+        });
+        Button confirmBtn = new Button("確認");
 
+        confirmBtn.setOnAction(event -> {
+            List<String> slist = vBox.getChildren().stream().filter(n -> n instanceof CheckBox)
+                    .map(n2 -> (CheckBox) n2)
+                    .filter(n3 -> n3.isSelected())
+                    .map(n4 -> n4.getText()).collect(Collectors.toList());
+            selectString.removeAll(vBox.getChildren().stream().filter(n -> n instanceof CheckBox)
+                    .map(n2 -> (CheckBox) n2)
+                    .map(n4 -> n4.getText()).collect(Collectors.toList()));
+            selectString.addAll(slist);
+            stage.hide();
+        });
+
+        vBox.getChildren().add(confirmBtn);
+        Scene scene = new Scene(vBox, 600, 600);
+
+        stage.setScene(scene);
+        stage.setTitle("請選擇git要操作add的檔案");
+        stage.show();
+        return stage;
+    }
+
+    public Stage getGitDiscardOption(List<String> fileNames, List<String> selectString) {
+        Stage stage = new Stage();
+        VBox vBox = new VBox();
+        vBox.setSpacing(10);
+        vBox.setAlignment(Pos.TOP_LEFT);
+        vBox.setPadding(new Insets(10, 10, 10, 10));
+        fileNames.forEach(fn -> {
+            CheckBox checkBox = new CheckBox(fn);
+            vBox.getChildren().add(checkBox);
+        });
+        Button confirmBtn = new Button("確認");
+
+        confirmBtn.setOnAction(event -> {
+            List<String> slist = vBox.getChildren().stream().filter(n -> n instanceof CheckBox)
+                    .map(n2 -> (CheckBox) n2)
+                    .filter(n3 -> n3.isSelected())
+                    .map(n4 -> n4.getText()).collect(Collectors.toList());
+            selectString.removeAll(vBox.getChildren().stream().filter(n -> n instanceof CheckBox)
+                    .map(n2 -> (CheckBox) n2)
+                    .map(n4 -> n4.getText()).collect(Collectors.toList()));
+            selectString.addAll(slist);
+            stage.hide();
+        });
+
+        vBox.getChildren().add(confirmBtn);
+        Scene scene = new Scene(vBox, 600, 600);
+
+        stage.setScene(scene);
+        stage.setTitle("請選擇git要操作Discard的檔案");
+        stage.show();
+        return stage;
+    }
 }

@@ -1,0 +1,2 @@
+JAVA_VERSION="11.0.4"
+MODULES="java.base com.fasterxml.jackson.annotation com.fasterxml.jackson.core java.datatransfer java.xml java.prefs java.desktop java.logging java.transaction.xa java.sql com.fasterxml.jackson.databind jakarta.activation java.compiler java.validation org.codehaus.stax2 java.xml.bind dom4j javafx.base jdk.unsupported javafx.graphics javafx.controls java.scripting javafx.fxml idv.liucheyu.pomreader"

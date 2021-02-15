@@ -1,25 +1,71 @@
 
-U	java:S106C"9Replace this use of System.out or System.err by a logger.(²úÔ8ûÓŞô®.
-c
-java:S2142&"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8©‘Ûô®.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8©‘Ûô®.
-U	java:S106!"9Replace this use of System.out or System.err by a logger.(²úÔ8©‘Ûô®.
-U	java:S106@"9Replace this use of System.out or System.err by a logger.(õâÆ¸8ûÓŞô®.
+`
+java:S2259"CA "NullPointerException" could be thrown; "isrn2" is nullable here.(ºÕ³ 8ÙŠ‚Ç´.
 E
-java:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©‘Ûô®.
+java:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬›øÆ´.
 E
-java:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ûÓŞô®.
+java:S1604"(Make this anonymous inner class a lambda(ÉãÃ®8Àá—ú².
+_
+java:S2259|"BA "NullPointerException" could be thrown; "isrn" is nullable here.(Ô»‚­8ÙŠ‚Ç´.
 a
-java:S2147&"DCombine this catch with the one at line 36, which has the same body.(ä ¹€8©‘Ûô®.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(õâÆ¸8©‘Ûô®.
+java:S2259}"DA "NullPointerException" could be thrown; "reader" is nullable here.(°ĞãÇ8ÙŠ‚Ç´.
+Q
+java:S1143D"4Remove this break statement from this finally block.(›ûä·8öşøÆ´.
 a
-java:S2147H"DCombine this catch with the one at line 70, which has the same body.(ä ¹€8ûÓŞô®.
-Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8ûÓŞô®.
-o	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šâÔâüÿÿÿÿ8©‘Ûô®.
+java:S2259<"DA "NullPointerException" could be thrown; "reader" is nullable here.(°ĞãÇ8ŞëøÆ´.
+a
+java:S21474"DCombine this catch with the one at line 50, which has the same body.(ä ¹€8÷ÆğÆ´.
+T	java:S106x"9Replace this use of System.out or System.err by a logger.(å¡‘W8Ò‘Ç´.
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8ÙŠ‚Ç´.
 E
-java:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ûÓŞô®.
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÖÒ·ûÿÿÿÿ8¡ÁĞ®.
+java:S1604M"(Make this anonymous inner class a lambda(ÉãÃ®8öşøÆ´.
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(²úÔ8ÙŠ‚Ç´.
 c
-java:S2142H"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ûÓŞô®.
+java:S2259="AA "NullPointerException" could be thrown; "in2" is nullable here.(ÉÌ»îşÿÿÿÿ8ŞëøÆ´.
+c
+java:S21424"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8©âáÆ´.
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8ïÁàÆ´.
+t
+java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(šâÔâüÿÿÿÿ8öşøÆ´.
 E
-java:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©‘Ûô®.
+java:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ïÁàÆ´.
+E
+java:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©âáÆ´.
+b
+java:S2147u"ECombine this catch with the one at line 115, which has the same body.(ä ¹€8ÙŠ‚Ç´.
+`
+java:S2259>"CA "NullPointerException" could be thrown; "isrn2" is nullable here.(ºÕ³ 8ŞëøÆ´.
+c
+java:S2259~"AA "NullPointerException" could be thrown; "in2" is nullable here.(ÉÌ»îşÿÿÿÿ8ÙŠ‚Ç´.
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÖÒ·ûÿÿÿÿ8¡ÁĞ®.
+U	java:S106("9Replace this use of System.out or System.err by a logger.(õâÆ¸8ïÁàÆ´.
+F
+java:S1148‚"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙŠ‚Ç´.
+E
+java:S1148t"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙŠ‚Ç´.
+_
+java:S2259;"BA "NullPointerException" could be thrown; "isrn" is nullable here.(Ô»‚­8ŞëøÆ´.
+c
+java:S2142u"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÙŠ‚Ç´.
+b
+java:S2259{"@A "NullPointerException" could be thrown; "in" is nullable here.(€¶º‡ıÿÿÿÿ8ÙŠ‚Ç´.
+b
+java:S2259:"@A "NullPointerException" could be thrown; "in" is nullable here.(€¶º‡ıÿÿÿÿ8ìı÷Æ´.
+L
+java:S2093["*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ÙŠ‚Ç´.
+E
+java:S1148v"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙŠ‚Ç´.
+L
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8‚ëğÆ´.
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÕÖÒ·ûÿÿÿÿ8ÿº¶Æ´.
+R
+java:S1143…"4Remove this break statement from this finally block.(›ûä·8ÙŠ‚Ç´.
+h
+java:S2259€"EA "NullPointerException" could be thrown; "reader2" is nullable here.(¾»‰»ıÿÿÿÿ8ÙŠ‚Ç´.
+g
+java:S2259?"EA "NullPointerException" could be thrown; "reader2" is nullable here.(¾»‰»ıÿÿÿÿ8ŞëøÆ´.
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(²úÔ8ïÁàÆ´.
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(õâÆ¸8ÙŠ‚Ç´.
+o	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šâÔâüÿÿÿÿ8öşøÆ´.
+T	java:S1067"9Replace this use of System.out or System.err by a logger.(å¡‘W8¸òÇ´.

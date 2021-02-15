@@ -25,6 +25,13 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXMLDocument.fxml"));
         Parent root = loader.load();
+
+        Scene scene = new Scene(root, 1000, 650);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+
+        stage.setScene(scene);
+        stage.setTitle("POM Reader");
+
         MainController controller = loader.getController();
         controller.setApplication(this);
         controller.setControllerStage(stage);
@@ -52,15 +59,11 @@ public class Main extends Application {
             pageSetting.setUpMainPage(configOp.get(), stage, controller);
         }
 
-
         controller.setConfigModel(configOp.get());
 
         controller.getMainPane().setVisible(true);
-        Scene scene = new Scene(root, 1000, 650);
-        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
 
-        stage.setScene(scene);
-        stage.setTitle("POM Reader");
+
         stage.show();
 
     }

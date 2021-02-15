@@ -1,75 +1,85 @@
 
-c
-java:S2147¿"ECombine this catch with the one at line 189, which has the same body.(ï­£Ä8§Ä«¡°.
-k
-java:S1192£"MDefine a constant instead of duplicating this literal "dependencies" 3 times.(çÒô8ÃÅşá­.
 F
-java:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-[
-java:S4719["9Replace charset name argument with StandardCharsets.UTF_8(……®Øÿÿÿÿÿ8§Ä«¡°.
-F
-java:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-n
-java:S1192ö"KDefine a constant instead of duplicating this literal "artifactId" 3 times.(ïº±ÿÿÿÿÿ8§Ä«¡°.
-_
-java:S2259—"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
-E
-java:S1148L"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-E
-java:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-^
-java:S1075."ARefactor your code to get this URI from a customizable parameter.(ãÉ8§Ä«¡°.
-X	java:S1252"<This block of commented-out lines of code should be removed.(ìè²8§Ä«¡°.
-]	java:S1254"<This block of commented-out lines of code should be removed.(’•îæıÿÿÿÿ8§Ä«¡°.
-c
-java:S2147“"ECombine this catch with the one at line 145, which has the same body.(ï­£Ä8§Ä«¡°.
-F
-java:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-A
-java:S1148—"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
-_
-java:S2259˜"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
-O
-java:S1612à",Replace this lambda with a method reference.(¿ÍÎ¼şÿÿÿÿ8§Ä«¡°.
-‘
-java:S1130Î"tRemove the declaration of thrown exception 'org.dom4j.DocumentException', as it cannot be thrown from method's body.(‚Ïí8§Ä«¡°.
-k
-java:S1192¥"HDefine a constant instead of duplicating this literal "version" 5 times.(™‡ç…ÿÿÿÿÿ8§Ä«¡°.
-E
-java:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
-A
-java:S1148Ç"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
-_
-java:S2259Ã"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
-X
-java:S1854‡":Remove this useless assignment to local variable "depMap".(…øüü8§Ä«¡°.
-A
-java:S1148›"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
+java:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+p
+java:S3776ò"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(‡ùÕ˜8¤ŞÎ³´.
 N
-java:S1481²"+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8§Ä«¡°.
-_
-java:S2259Ä"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
-f
-java:S2095B"DUse try-with-resources or close this "Stream" in a "finally" clause.(Íß‹ùúÿÿÿÿ8§Ä«¡°.
-m
-java:S1192¢"JDefine a constant instead of duplicating this literal "\\pom.xml" 3 times.(ÕéÅÊıÿÿÿÿ8•ğÍ¹­.
+java:S1481"+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8§Ä«¡°.
 @
-java:S1148u"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
-g
-java:S2259™"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8§Ä«¡°.
+java:S1148|"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
+c
+java:S2147Æ"ECombine this catch with the one at line 196, which has the same body.(ï­£Ä8§Ä«¡°.
+A
+java:S1148¦"#Use a logger to log this exception.(Ç’Çê8ÌõäÃ´.
+_
+java:S2259Ë"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
+X
+java:S1854–":Remove this useless assignment to local variable "depMap".(…øüü8ÌõäÃ´.
+t
+java:S1905Å"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@294e339a".(ù§Ç‡8ÌõäÃ´.
 M
-java:S2093±"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8§Ä«¡°.
-U
-java:S3655¤"7Call "Optional#isPresent()" before accessing the value.(„ˆäŠ8§Ä«¡°.
-^	java:S125´"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8§Ä«¡°.
-^	java:S125ˆ"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8§Ä«¡°.
-N
-java:S1481†"+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8§Ä«¡°.
-M
-java:S2093‚"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8§Ä«¡°.
-g
-java:S2259Å"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8§Ä«¡°.
-f
-java:S1192¤"HDefine a constant instead of duplicating this literal "groupId" 7 times.(„ˆäŠ8àû¼­.
+java:S2093¸"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8§Ä«¡°.
+^	java:S125»"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8§Ä«¡°.
+t
+java:S1905Á"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@294e339a".(ù§Ç‡8ÌõäÃ´.
+t
+java:S1905æ"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@294e339a".(ù§Ç‡8ÌõäÃ´.
+n
+java:S1192ş"KDefine a constant instead of duplicating this literal "artifactId" 5 times.(°‘›øÿÿÿÿ8ô†á³´.
 F
-java:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+java:S1148Ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+U
+java:S3655«"7Call "Optional#isPresent()" before accessing the value.(„ˆäŠ8§Ä«¡°.
+f
+java:S2095I"DUse try-with-resources or close this "Stream" in a "finally" clause.(Íß‹ùúÿÿÿÿ8§Ä«¡°.
+[
+java:S4719b"9Replace charset name argument with StandardCharsets.UTF_8(……®Øÿÿÿÿÿ8§Ä«¡°.
+_
+java:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
+N
+java:S1481¹"+Remove this unused "format" local variable.(æû‹£øÿÿÿÿ8§Ä«¡°.
+m
+java:S1192©"JDefine a constant instead of duplicating this literal "\\pom.xml" 3 times.(ÕéÅÊıÿÿÿÿ8•ğÍ¹­.
+c
+java:S2147š"ECombine this catch with the one at line 152, which has the same body.(ï­£Ä8§Ä«¡°.
+‘
+java:S1130Õ"tRemove the declaration of thrown exception 'org.dom4j.DocumentException', as it cannot be thrown from method's body.(‚Ïí8§Ä«¡°.
+g
+java:S2259 "DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8§Ä«¡°.
+k
+java:S1192ª"MDefine a constant instead of duplicating this literal "dependencies" 4 times.(çÒô8ÃÅşá­.
+]	java:S125;"<This block of commented-out lines of code should be removed.(’•îæıÿÿÿÿ8§Ä«¡°.
+f
+java:S1192«"HDefine a constant instead of duplicating this literal "groupId" 9 times.(„ˆäŠ8àû¼­.
+g
+java:S2259Ì"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ8§Ä«¡°.
+E
+java:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+_
+java:S2259Ÿ"AA "NullPointerException" could be thrown; "osw" is nullable here.(ÙÉËü8àû¼­.
+^
+java:S10755"ARefactor your code to get this URI from a customizable parameter.(ãÉ8§Ä«¡°.
+X	java:S1259"<This block of commented-out lines of code should be removed.(ìè²8§Ä«¡°.
+A
+java:S1148¢"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
+O
+java:S1612ç",Replace this lambda with a method reference.(¿ÍÎ¼şÿÿÿÿ8§Ä«¡°.
+A
+java:S1148Î"#Use a logger to log this exception.(Ç’Çê8§Ä«¡°.
+k
+java:S1192¬"HDefine a constant instead of duplicating this literal "version" 7 times.(™‡ç…ÿÿÿÿÿ8§Ä«¡°.
+F
+java:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+F
+java:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+t
+java:S1905â"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@294e339a".(ù§Ç‡8ÌõäÃ´.
+_
+java:S2259Ê"AA "NullPointerException" could be thrown; "out" is nullable here.(„¸Ç§8•ğÍ¹­.
+E
+java:S1148S"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+E
+java:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ä«¡°.
+^	java:S125"<This block of commented-out lines of code should be removed.(×˜µ™ùÿÿÿÿ8§Ä«¡°.
+M
+java:S2093‰"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8§Ä«¡°.

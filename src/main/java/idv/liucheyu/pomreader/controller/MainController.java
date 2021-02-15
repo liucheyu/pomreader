@@ -19,7 +19,6 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import org.eclipse.jgit.lib.Repository;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -108,9 +107,8 @@ public class MainController {
 
         if (((Button) event.getSource()).getId().equals("discardAllPom")) {
             projectPath.forEach(pjpath -> {
-                if (gitService.exist(new File(pjpath.toString(), ".git"))) {
-                    Repository repository = gitService.getRepository(pjpath.toString());
-                    gitService.discard(repository, "pom.xml");
+                if (gitService.exist(pjpath.toString())) {
+                    gitService.discard(pjpath.toString(), "pom.xml");
                 }
             });
             singleModifyGrid.getChildren().clear();

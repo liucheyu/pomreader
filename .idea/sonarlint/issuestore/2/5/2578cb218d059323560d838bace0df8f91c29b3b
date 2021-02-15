@@ -1,41 +1,41 @@
 
-y
-java:S1905ø"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@63ba7367".(ïÔÔúÿÿÿÿÿ8ú³×Ö®.
-u
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Æ¾ƒ¾øÿÿÿÿ8¹À‡™±.
-O
-java:S1612á",Replace this lambda with a method reference.(ÿ²Ù«øÿÿÿÿ8ú³×Ö®.
-_
-java:S1854€"<Remove this useless assignment to local variable "configOp".(øÜÑ‘ùÿÿÿÿ8æ•üâ­.
-F
-java:S1604Ä"(Make this anonymous inner class a lambda(Ø­¡8ÎÿÖ®.
-V	java:S106‘"9Replace this use of System.out or System.err by a logger.(‡¡è«8ÄÕÚ °.
-N
-java:S1068?",Remove this unused "mainPage" private field.(è¶˜ùÿÿÿÿ8•ß‰ä­.
-k
-java:S2259Q"IA "NullPointerException" could be thrown; "configModel" is nullable here.(ƒ’÷ìüÿÿÿÿ8•ß‰ä­.
-R
-java:S1068="0Remove this unused "idvComponent" private field.(ŸÖáıÿÿÿÿ8§´íº­.
+Y	java:S125Ÿ"<This block of commented-out lines of code should be removed.(¡°êô8ØğÁ­±.
 t
-java:S3776I"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(©ÕÌñÿÿÿÿÿ8§´íº­.
-Q
-java:S1068A"4Remove this unused "originVersionMap" private field.(èËÄ8•ß‰ä­.
-p
-java:S3776ñ"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(§ªş8©Ø³Ù°.
-Y	java:S125¡"<This block of commented-out lines of code should be removed.(¡°êô8ØğÁ­±.
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(©ÕÌñÿÿÿÿÿ8§´íº­.
 y
-java:S1905ã"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@63ba7367".(ïÔÔúÿÿÿÿÿ8ú³×Ö®.
-O
-java:S1068>"2Remove this unused "pomVersionText" private field.(°åàÉ8§´íº­.
-m
-java:S1192™"JDefine a constant instead of duplicating this literal "choiceBox" 5 times.(ƒïŒ¡üÿÿÿÿ8ØğÁ­±.
-[	java:S106ò"9Replace this use of System.out or System.err by a logger.(«Óÿ”ıÿÿÿÿ8ú³×Ö®.
-M
-java:S1068B"1Remove this unused "pomVersionMap" private field.(êÍÂ8•ß‰ä­.
+java:S1905ö"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@482c0586".(ïÔÔúÿÿÿÿÿ8ú³×Ö®.
+[	java:S106ğ"9Replace this use of System.out or System.err by a logger.(«Óÿ”ıÿÿÿÿ8ú³×Ö®.
+V	java:S106"9Replace this use of System.out or System.err by a logger.(‡¡è«8ÄÕÚ °.
 l
-java:S2259Ü"IA "NullPointerException" could be thrown; "configModel" is nullable here.(Òö”Ñøÿÿÿÿ8ú³×Ö®.
+java:S2259Ú"IA "NullPointerException" could be thrown; "configModel" is nullable here.(Òö”Ñøÿÿÿÿ8ú³×Ö®.
+M
+java:S1068A"1Remove this unused "pomVersionMap" private field.(êÍÂ8•ß‰ä­.
+O
+java:S1612ß",Replace this lambda with a method reference.(ÿ²Ù«øÿÿÿÿ8ú³×Ö®.
+k
+java:S2259P"IA "NullPointerException" could be thrown; "configModel" is nullable here.(ƒ’÷ìüÿÿÿÿ8•ß‰ä­.
+F
+java:S1604Â"(Make this anonymous inner class a lambda(Ø­¡8ÎÿÖ®.
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Æ¾ƒ¾øÿÿÿÿ8¹À‡™±.
 y
-java:S1905—"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@63ba7367".(ïÔÔúÿÿÿÿÿ8ÄÕÚ °.
+java:S1905á"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@482c0586".(ïÔÔúÿÿÿÿÿ8ú³×Ö®.
+N
+java:S1068>",Remove this unused "mainPage" private field.(è¶˜ùÿÿÿÿ8•ß‰ä­.
+z	java:S116("YRename this field "MenuItemImport" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ·Ü’øÿÿÿÿ8§´íº­.
+R
+java:S1068<"0Remove this unused "idvComponent" private field.(ŸÖáıÿÿÿÿ8§´íº­.
+m
+java:S1192—"JDefine a constant instead of duplicating this literal "choiceBox" 5 times.(ƒïŒ¡üÿÿÿÿ8ØğÁ­±.
+O
+java:S1068="2Remove this unused "pomVersionText" private field.(°åàÉ8§´íº­.
+^
+java:S1854~"<Remove this useless assignment to local variable "configOp".(øÜÑ‘ùÿÿÿÿ8æ•üâ­.
 t
-java:S3776~"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Õ´Ã¤øÿÿÿÿ8Û’è¬±.
-z	java:S116)"YRename this field "MenuItemImport" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ·Ü’øÿÿÿÿ8§´íº­.
+java:S3776|"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Õ´Ã¤øÿÿÿÿ8Û’è¬±.
+p
+java:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(§ªş8©Ø³Ù°.
+Q
+java:S1068@"4Remove this unused "originVersionMap" private field.(èËÄ8•ß‰ä­.
+y
+java:S1905•"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@482c0586".(ïÔÔúÿÿÿÿÿ8ÄÕÚ °.

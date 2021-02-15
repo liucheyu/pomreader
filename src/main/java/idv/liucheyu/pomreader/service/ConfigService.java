@@ -3,7 +3,6 @@ package idv.liucheyu.pomreader.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import idv.liucheyu.pomreader.Main;
 import idv.liucheyu.pomreader.controller.EditTextController;
 import idv.liucheyu.pomreader.controller.MainController;
 import idv.liucheyu.pomreader.model.ConfigModel;
@@ -25,7 +24,7 @@ public class ConfigService {
 
     private FileService fileService = new FileService();
     private ObjectMapper objectMapper = new ObjectMapper();
-    String javaPath = Main.class.getResource("").getPath();
+    String javaPath = System.getProperty("user.home") + "\\";
     Properties prop = new Properties();
 
     public String getBaseFolderDialog(Stage stage) {

@@ -41,3 +41,5 @@ R
 "src/main/java/META-INF/MANIFEST.MF,6\3\63ef5783cbf71fdf39c1fd6ae6873fd812259930
 D
 META-INF/MANIFEST.MF,2\e\2e8cf92205ec303e7304888d382cb6a8cf5f56ba
+}
+Msrc/main/java/idv/liucheyu/pomreader/exception/MavenExcuteErrorException.java,c\7\c7dd232297c79236cfd1507f4fcc7f3a2a24294e

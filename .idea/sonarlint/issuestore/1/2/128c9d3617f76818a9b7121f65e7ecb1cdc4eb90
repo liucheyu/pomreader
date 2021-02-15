@@ -1,13 +1,62 @@
 
-e
-java:S2259X"HA "NullPointerException" could be thrown; "repository" is nullable here.(ëí’÷8›¾¶æ­.
+c
+java:S2147³"ECombine this catch with the one at line 177, which has the same body.(ä ¹€8Èèçù².
+p
+java:S1192 "NDefine a constant instead of duplicating this literal "none messsage" 3 times.(™‹õøÿÿÿÿ8Ÿıùş±.
+F
+java:S1148å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².
+z
+java:S1192«"\Define a constant instead of duplicating this literal "\nExited with error code : " 3 times.(õâÆ¸8Èèçù².
+c
+java:S2147ä"ECombine this catch with the one at line 226, which has the same body.(ä ¹€8Èèçù².
+F
+java:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².
+L
+java:S1066U"/Merge this if statement with the enclosing one.(ÜÑ¬ù8•Ë†ú².
+N
+java:S1602H",Remove useless curly braces around statement(¢²£Öıÿÿÿÿ8ãü©÷².
+d
+java:S2142³"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Èèçù².
+p
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ø‡˜¶8Èèçù².
+F
+java:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².
+F
+java:S1148²"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æ°Ş¢8¾í¿ù±.
+[	java:S106§"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8Èèçù².
+V	java:S106Ü"9Replace this use of System.out or System.err by a logger.(õâÆ¸8Èèçù².
+F
+java:S1148ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².
+V	java:S106ß"9Replace this use of System.out or System.err by a logger.(²úÔ8Èèçù².
+V	java:S106"9Replace this use of System.out or System.err by a logger.(²úÔ8Èèçù².
+]	java:S125]"<This block of commented-out lines of code should be removed.(­ú©ÿÿÿÿÿ8Èèçù².
+[	java:S106ú"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8Èèçù².
+i
+java:S1192""GDefine a constant instead of duplicating this literal "commit" 3 times.(…ÿ°“úÿÿÿÿ8Ÿıùş±.
+p
+java:S3776º"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ğäÏ¸8Èèçù².
 E
-java:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›¾¶æ­.
-@
-java:S1148H"#Use a logger to log this exception.(Ç’Çê8éØÅê°.
-@
-java:S11487"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.
-@
-java:S1148%"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.
-@
-java:S1148"#Use a logger to log this exception.(Ç’Çê8›¾¶æ­.
+java:S1604x"(Make this anonymous inner class a lambda(Ø­¡8Èèçù².
+d
+java:S2142ä"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Èèçù².
+t
+java:S3776A"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(£íìğûÿÿÿÿ8Èèçù².
+[	java:S106Ø"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8Èèçù².
+V	java:S106®"9Replace this use of System.out or System.err by a logger.(²úÔ8Èèçù².
+d
+java:S2142†"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Èèçù².
+V	java:S106ş"9Replace this use of System.out or System.err by a logger.(õâÆ¸8Èèçù².
+]	java:S1256"<This block of commented-out lines of code should be removed.(Ì˜ÌÇùÿÿÿÿ8ÄÃö².
+N
+java:S1481n",Remove this unused "message" local variable.(™‹õøÿÿÿÿ8Èèçù².
+c
+java:S2147†"ECombine this catch with the one at line 260, which has the same body.(ä ¹€8Èèçù².
+V	java:S106«"9Replace this use of System.out or System.err by a logger.(õâÆ¸8Èèçù².
+j
+java:S1192†"GDefine a constant instead of duplicating this literal "status" 3 times.(É§­êüÿÿÿÿ8Èèçù².
+]
+java:S1854n";Remove this useless assignment to local variable "message".(™‹õøÿÿÿÿ8Èèçù².
+F
+java:S1148´"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Èèçù².

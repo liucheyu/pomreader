@@ -17,7 +17,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-import java.io.File;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
@@ -104,30 +103,38 @@ public class IndividualPomVersionComponent implements BaseComponent {
             pomVersionButton.setId("pomVersionButton");
             pane.add(pomVersionButton, 5, rowIndex);
 
-            if(gitService.exist(new File(pomModel.getProjectPath().toString(), ".git"))){
+            if(gitService.exist(pomModel.getProjectPath().toString())){
                 HBox hBox = new HBox();
                 hBox.setSpacing(10.0);
                 VBox vBox = new VBox();
-                Button discardPomBtn = new Button("Discard Pom");
+                Button discardPomBtn = new Button("Discar列表");
+
                 discardPomBtn.setId("discardPom");
                 discardPomBtn.setOnAction(new PomButtonOnClickEvent(pomModel.getProjectPath(), pane, pomModel.getDependency().getGroupId()));
-                Button commitPomBtn = new Button("Commit Pom");
-                commitPomBtn.setId("commitPom");
-                commitPomBtn.setOnAction(new PomButtonOnClickEvent(pomModel.getProjectPath(), pane, pomModel.getDependency().getGroupId()));
+                Button commitOp = new Button("Add&Commit");
+                commitOp.setId("commitOp");
+                commitOp.setOnAction(new PomButtonOnClickEvent(pomModel.getProjectPath(), pane, pomModel.getDependency().getGroupId()));
                 vBox.getChildren().add(discardPomBtn);
-                vBox.getChildren().add(commitPomBtn);
+                vBox.getChildren().add(commitOp);
                 vBox.setSpacing(10.0);
+                discardPomBtn.setMaxWidth(Double.MAX_VALUE);
+                commitOp.setMaxWidth(Double.MAX_VALUE);
+                vBox.setFillWidth(true);
 
                 VBox vBox2 = new VBox();
                 vBox2.setSpacing(10.0);
                 Button commitPj = new Button("commit專案");
                 commitPj.setId("commitPj");
                 commitPj.setOnAction(new PomButtonOnClickEvent(pomModel.getProjectPath(), pane, pomModel.getDependency().getGroupId()));
-                Button gitStatusBtn = new Button("原生cmd指令");
+                Button gitStatusBtn = new Button("status");
                 gitStatusBtn.setId("gitStausBtn");
                 gitStatusBtn.setOnAction(new PomButtonOnClickEvent(pomModel.getProjectPath(), pane, pomModel.getDependency().getGroupId()));
                 vBox2.getChildren().add(commitPj);
                 vBox2.getChildren().add(gitStatusBtn);
+                commitPj.setMaxWidth(Double.MAX_VALUE);
+                gitStatusBtn.setMaxWidth(Double.MAX_VALUE);
+                vBox2.setFillWidth(true);
+
                 hBox.getChildren().add(vBox);
                 hBox.getChildren().add(vBox2);
 
@@ -136,36 +143,38 @@ public class IndividualPomVersionComponent implements BaseComponent {
 
             //依賴專案
             rowIndex++;
-            if (pomModel.getDependency().getGroupId() != null && !pomModel.getDependency().getGroupId().equals("")) {
-                Label dependencyLabel = new Label("  依賴|-" + pomModel.getDependency().getArtifactId());
-                pane.add(dependencyLabel, 0, rowIndex);
+            if(pomModel.getDependency() != null){
+                if (pomModel.getDependency().getGroupId() != null && !pomModel.getDependency().getGroupId().equals("")) {
+                    Label dependencyLabel = new Label("  依賴|-" + pomModel.getDependency().getArtifactId());
+                    pane.add(dependencyLabel, 0, rowIndex);
 
-                Label depVersion = new Label(pomModel.getDependency().getVersion());
-                depVersion.setId(pjName + "-depVersionText");
-                pane.add(depVersion, 3, rowIndex);
+                    Label depVersion = new Label(pomModel.getDependency().getVersion());
+                    depVersion.setId(pjName + "-depVersionText");
+                    pane.add(depVersion, 3, rowIndex);
 
-                ContextMenu contextMenu3 = new ContextMenu();
-                MenuItem menuItem3 = new MenuItem("複製");
-                contextMenu3.getItems().add(menuItem3);
-                depVersion.setContextMenu(contextMenu3);
-                menuItem3.setOnAction(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        Clipboard clipboard = Clipboard.getSystemClipboard();
-                        ClipboardContent clipboardContent = new ClipboardContent();
-                        clipboardContent.putString(depVersion.getText());
-                        clipboard.setContent(clipboardContent);
-                    }
-                });
+                    ContextMenu contextMenu3 = new ContextMenu();
+                    MenuItem menuItem3 = new MenuItem("複製");
+                    contextMenu3.getItems().add(menuItem3);
+                    depVersion.setContextMenu(contextMenu3);
+                    menuItem3.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent event) {
+                            Clipboard clipboard = Clipboard.getSystemClipboard();
+                            ClipboardContent clipboardContent = new ClipboardContent();
+                            clipboardContent.putString(depVersion.getText());
+                            clipboard.setContent(clipboardContent);
+                        }
+                    });
 
 
-                TextField modifyDepField = new TextField();
-                pane.add(modifyDepField, 4, rowIndex);
-                Button depVersionButton = new Button("確定");
-                depVersionButton.setId("depVersionButton");
-                depVersionButton.setOnAction(updatePomVersionEvent.updateDepPomVersion(depVersion, projectPath.get(i), pomModel.getDependency().getGroupId(), modifyDepField));
-                pane.add(depVersionButton, 5, rowIndex);
+                    TextField modifyDepField = new TextField();
+                    pane.add(modifyDepField, 4, rowIndex);
+                    Button depVersionButton = new Button("確定");
+                    depVersionButton.setId("depVersionButton");
+                    depVersionButton.setOnAction(updatePomVersionEvent.updateDepPomVersion(depVersion, projectPath.get(i), pomModel.getDependency().getGroupId(), modifyDepField));
+                    pane.add(depVersionButton, 5, rowIndex);
 
+                }
             }
 
             rowIndex++;

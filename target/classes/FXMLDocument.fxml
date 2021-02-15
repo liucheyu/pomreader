@@ -76,7 +76,7 @@
 
                     <!--        </Tab>-->
                     <Tab text="所有專案版本改一樣" closable="false">
-                        <HBox id="sameVersionBox" spacing="10">
+                        <HBox id="sameVersionBox" spacing="10" alignment="TOP_CENTER">
                             <Text>version:</Text>
                             <TextField fx:id="sameVersionTField" maxWidth="200"></TextField>
                             <Button fx:id="sameVersionButton" onAction="#samePomVersionEvent">修改全部POM</Button>
@@ -85,6 +85,9 @@
                     </Tab>
                     <Tab text="maven指令">
                         <HBox spacing="10" alignment="TOP_CENTER">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
                             <VBox spacing="10" fx:id="mavenPage" disable="true">
                                 <VBox spacing="10" fx:id="choiceParent">
                                     <Button fx:id="choiceAdd" onAction="#choiceAddAction">點擊增加多個操作專案(建議按照底層=>上層的順序)</Button>

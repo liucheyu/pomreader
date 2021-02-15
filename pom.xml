@@ -6,7 +6,7 @@
 
     <groupId>idv.liucheyu</groupId>
     <artifactId>pomreader</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>11</java.version>
@@ -121,7 +121,7 @@
                     <noHeaderFiles>true</noHeaderFiles>
                     <noManPages>true</noManPages>
                     <jlinkImageName>pomreader</jlinkImageName>
-                    <jlinkZipName>pomreaderzip</jlinkZipName>
+                    <jlinkZipName>pomreader</jlinkZipName>
                 </configuration>
             </plugin>
 <!--            <plugin>-->
